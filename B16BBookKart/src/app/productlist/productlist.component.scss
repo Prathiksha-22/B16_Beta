@@ -1,0 +1,37 @@
+.mat-button-ripple.mat-ripple, .mat-button-focus-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.mat-ripple {
+    overflow: hidden;
+    position: relative;
+}
+
+.product-containers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card img {
+    width: 150px;
+    height: 200px;
+    margin-bottom: 15px;
+    position: relative;
+    // transition: 0.3s ease-in-out;
+}
+
+.card{
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);; 
+}

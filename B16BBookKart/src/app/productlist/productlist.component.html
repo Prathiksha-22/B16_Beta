@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+            <mat-card class="card col-md-2">
+                
+                    <mat-card-content>
+                        <img src="{{item.icon}}" alt="">
+                    </mat-card-content>
+
+                    <mat-card-content>
+                        <h3 style="white-space: initial; 
+                                overflow: hidden; 
+                                text-overflow:ellipsis; 
+                                max-width: 50ch;">
+                            <strong>{{item.title}}</strong>
+                        </h3>
+                        <p>{{item.price | currency: 'INR' }}</p>
+                    </mat-card-content>
+
+                    <mat-card-actions>
+                        <button mat-raised-button color="primary">
+                            <span>
+                                <span>
+                                    <mat-icon>shopping_cart</mat-icon>
+                                </span>
+                                Add to Cart
+                            </span>
+                            <span matripple class=" mat-button mat-ripple mat-button-ripple"></span>
+                            <span class=" mat-button mat-button-focus-overlay"></span>
+                        </button>
+
+                    </mat-card-actions>
+                
+                </mat-card>
+        </ng-container>
+    </div>
+</div>
