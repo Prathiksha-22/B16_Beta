@@ -1,17 +1,21 @@
 <div class="container">
     <div class="row">
         <ng-container *ngFor="let item of productList">
-            <mat-card class="card col-md-2">
+            <mat-card class="card col-md-2 p-1 item-card mat-card mat-elevation-z2">
                 
-                    <mat-card-content>
-                        <img src="{{item.icon}}" alt="">
+                    <mat-card-content class="mat-card-content image-card">
+                        <a href="#">
+                            <img src="{{item.icon}}" 
+                                alt="Item Title Cover"
+                                class= "mat-card-image
+                                preview-image"
+                                >
+                        </a>
+                        
                     </mat-card-content>
 
-                    <mat-card-content>
-                        <h3 style="white-space: initial; 
-                                overflow: hidden; 
-                                text-overflow:ellipsis; 
-                                max-width: 50ch;">
+                    <mat-card-content class="item-title mat-card-content">
+                        <h3>
                             <strong>{{item.title}}</strong>
                         </h3>
                         <p>{{item.price | currency: 'INR' }}</p>

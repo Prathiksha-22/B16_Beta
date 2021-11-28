@@ -8,6 +8,14 @@
     border-radius: inherit;
 }
 
+.item-title{
+    overflow: hidden; 
+    text-overflow:ellipsis; 
+    max-width: 50ch;
+    cursor: pointer;
+    white-space: initial;
+}
+
 .mat-ripple {
     overflow: hidden;
     position: relative;
@@ -34,4 +42,64 @@
 
 .card:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);; 
+}
+
+.p-1 {
+    padding: .25rem!important;
+}
+
+.item-card {
+    min-width: 204px;
+    max-width: 200px;
+    max-height: 400px;
+}
+
+.mat-card {
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    position: relative;
+    padding: 16px;
+    border-radius: 4px;
+    background: #fff;
+    color: rgba(0,0,0,.87);
+}
+
+// .mat-elevation-z2 {
+//     box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+// }
+
+.mat-card-content {
+    margin-bottom: 0;
+    display: block;
+    font-size: 14px;
+}
+
+.image-card {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.mat-card-image {
+    margin-top: 10px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    width: calc(100% + 32px);
+    margin: 0 -16px 16px -16px;
+}
+
+.preview-image {
+    max-height: 250px;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    justify-content: center;
+}
+
+.mat-raised-button:not([class*=mat-elevation-z]) {
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
 }
